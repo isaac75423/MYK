@@ -1,0 +1,79 @@
+body{
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+header {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    
+}
+
+aside{
+   background-color: aquamarine;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    bottom: 20px;
+    width: 20%;
+    padding: 10px;
+}
+
+section{
+    background-color: bisque;
+    position: fixed;
+    top: 90px;
+    left: 20%;
+    bottom: 20px;
+    width: 80%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 33px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.nav-menu{
+    margin-right: 40px;
+    display: flex;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 90px; 
+}
+.nav-menu-link:hover{
+    background-color: black;
+}
+.nav-menu-link{
+    padding: 9px 12px;
+    border-radius: 10px
+       
+}
