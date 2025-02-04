@@ -5,12 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class QuienesSomosController {
+public class ConctatosController {
 
-    @GetMapping("/quienesSomos")
+    @GetMapping("/conctatos")
     public String quienesSomos(Model model) {
-        model.addAttribute("titulo", "Quiénes Somos");
-        return "layout/quienesSomos"; 
+        model.addAttribute("titulo", "conctatos");
+        return "layout/conctatos"; 
 
 }
 }

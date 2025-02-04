@@ -9,9 +9,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <head th:fragment="head">
         <title>Tienda Isaac Hernandez Esquivel</title>
         <meta charset="UTF-8"/>
-        <!-- logo -->
-        <link rel="icon" type="imagen/png" sizes="16x16" href="/logo/logo.png"/>
-
+        <link rel="icon" type="imagen/png" sizes="16x16" href="/fav/favicon-16x16.png"/>
+        <link rel="icon" type="imagen/png" sizes="32x32" href="/fav/favicon-32x32.png"/>
+        <link rel="icon" type="imagen/png" sizes="96x96" href="/fav/favicon-96x96.png"/>
+        <link rel="icon" type="imagen/png" sizes="256x265" href="/fav/favicon-256x265.png"/>
         
         <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
         <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
@@ -36,6 +37,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             </li>
                             <!-- | -->
                             <li class="nav-item px-2"><a class="nav-link" th:href="@{/producto/listado}">[[#{plantilla.productos}]]</a></li>
+                            <!-- | -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" 
                                    data-bs-toggle="dropdown" 
@@ -43,9 +45,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                    role="button" 
                                    aria-expanded="false">[[#{plantilla.extras}]]</a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" th:href="@{/pruebas/listado}">[[#{plantilla.asociaciones}]]</a></li>
-                                    <li><a class="dropdown-item" th:href="@{/pruebas/listado2}">[[#{plantilla.consultas}]]</a></li>
-                                    <li><a class="dropdown-item" th:href="@{/reportes/principal}">[[#{plantilla.reportes}]]</a></li>
+
+                                    <!-- | -->
+                                    <li>
+                                        <a class="dropdown-item" th:href="@{/pruebas/listado2}">[[#{plantilla.consultas}]]</a>
+                                    </li>
+                                    <!-- | -->
+                                    <li>
+                                        <a class="dropdown-item" th:href="@{/reportes/principal}">[[#{plantilla.reportes}]]</a>
+                                    </li>
+                                    <!-- | -->
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -92,15 +101,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </div>
                 </div>
             </nav>
-            <section id="main-header" class="py-2 bg-success text-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1><i class="fas fa-cog"></i> [[#{plantilla.suTienda}]]</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <article class="text-center">
                 <p class="lead">Multiservicio MYK</p>
             </article>
@@ -125,6 +125,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </header>
+            <h3 class="text-center"> Nuestros servicios </h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://alianzaautomotriz.com/wp-content/uploads/2009/06/balanceo-de-las-llantas-770x489.jpg" height="250" width="250" alt="Balanceo">
+                    </td>
+                    <td>
+                        <h3 class="text-center" >Balanceo</h3>
+                        <p class="text-center">Mejoramos la estabilidad y seguridad de tu vehículo con un balanceo preciso y realizado por mecánicos con experiencia, así evitando desgastes irregulares, vibraciones al conducir e incluso accidentes.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://coches-alemania.pro/wp-content/uploads/2022/01/reparacion-de-llantas-de-aluminio-1024x683.jpg" height="250" width="250" alt="Reparacion de llantas">
+                    </td>
+                    <td>
+                        <h3 class="text-center" >Reparacion de llantas</h3>
+                        <p class="text-center">Reparamos llantas dañadas o con algún defecto para que recuperen su funcionalidad, garantizando un manejo seguro y eficiente en todo momento de sus viajes.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
     </body>
 </html>

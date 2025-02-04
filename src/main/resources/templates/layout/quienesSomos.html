@@ -32,7 +32,7 @@
                                 <a class="nav-link" th:href="@{/quienesSomos}">[[#{plantilla.categorias}]]</a>
                             </li>
                             <!-- | -->
-                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/producto/listado}">[[#{plantilla.productos}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link" th:href="@{/producto}">[[#{plantilla.productos}]]</a></li>
                             <!-- | -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" 
@@ -97,27 +97,37 @@
                     </div>
                 </div>
             </nav>
-            <section id="main-header" class="py-2 bg-success text-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h1><i class="fas fa-cog"></i> [[#{plantilla.suTienda}]]</h1>
-                        </div>
+            <article class="text-center">
+                <p class="lead">Multiservicio MYK</p>
+            </article>
+            <div id="carouselExampleIndicators" class="carousel slide" style="max-height: 500px; overflow: hidden;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://okdiario.com/img/2018/02/16/aceite.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="First slide">
+                    <</div>
+                    <div class="carousel-item">
+                        <img src="https://tecnoblog.mx/wp-content/uploads/2025/01/Autos-59.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://alianzaautomotriz.com/wp-content/uploads/2009/06/balanceo-de-las-llantas-770x489.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Third slide">
                     </div>
                 </div>
-            </section>
-            <article class="text-center">
-                <p class="lead">Ubícanos</p>
-                <div class="d-flex justify-content-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.8465514476424!2d-84.11629918650972!3d10.049218360671528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f131f70ff929%3A0x174f1ea9e635b5b9!2sMultiservicio%20M%26K!5e0!3m2!1ses-419!2scr!4v1738034408483!5m2!1ses-419!2scr" 
-                            width="1400" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p style="text-align: center; max-width: 1200px; margin: auto;">
+                El lubricentro Multiservicio MYK, fundado en 2020, se especializa en el mantenimiento preventivo y correctivo de vehículos. Ofrece cambio de aceite, mecánica rápida, balanceo y reparación de neumáticos, además de una amplia gama de accesorios automotrices.
+            </p>
+            
+            <p style="text-align: center; max-width: 1200px; margin: auto;">
+                "En Multiservicio MYK, transformamos el cuidado de tu vehículo en una experiencia de confianza y excelencia. Creemos que cada auto y moto merece atención especializada, y cada cliente, un servicio personalizado. Nos inspira la pasión por ofrecer calidad, la dedicación por innovar y el compromiso de ser más que un taller: tu aliado en cada kilómetro recorrido."
+            </p>
         </header>
         <footer th:fragment="footer" class="p-2 mt-5 bg-info text-white">
             <p class="text-center lead">&COPY; [[#{plantilla.derechos}]]</p> 

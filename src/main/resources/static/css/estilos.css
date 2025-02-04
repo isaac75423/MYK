@@ -44,7 +44,10 @@ footer {
     height: 33px;
 }
 
-
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
 nav{
     display: flex;
     justify-content: space-between;
